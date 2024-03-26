@@ -3,19 +3,25 @@ cmake_minimum_required(VERSION 3.2.0)
 # 项目信息
 project(nitroshare)
 
+
 # 指向自定义模块
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
+
 
 # 定义 Linux 常量
 if(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
     set(LINUX 1)
 endif()
 
+
+# 项目相关信息
 set(PROJECT_NAME "NitroShare")
 set(PROJECT_DESCRIPTION "Cross-platform network file transfer application")
 set(PROJECT_AUTHOR "Nathan Osman")
 set(PROJECT_URL "https://nitroshare.net")
 
+
+# 项目版本号
 set(PROJECT_VERSION_MAJOR 0)
 set(PROJECT_VERSION_MINOR 4)
 set(PROJECT_VERSION_PATCH 0)
