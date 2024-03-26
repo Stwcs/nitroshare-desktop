@@ -6,7 +6,7 @@ project(nitroshare)
 # 指向自定义模块
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
-# It would be nice if CMake offered a constant for Linux
+# 定义 Linux 常量
 if(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
     set(LINUX 1)
 endif()
